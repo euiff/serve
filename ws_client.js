@@ -9,7 +9,7 @@ req = http.get(`https://livegarra.onrender.com/channel/UCuODGS_c39psNvI8f3bYN_g.
         console.log('status da resposta:', resposta.statusCode)
         
         //url do servidor onde está rodando o script server (lembre de abrir as portas necessarias no servidor)
-        let ws = websocket('https://icb1.onrender.com/:8098') // é criado um objeto websocket para se conectar ao servidor
+        let ws = websocket('https://icb2.onrender.com/:8098') // é criado um objeto websocket para se conectar ao servidor
         
         // a stream de resposta é retransmitida atraves do websocket
         resposta.pipe(ws)
