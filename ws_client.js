@@ -9,7 +9,7 @@ req = http.get(`http://live-as-01-03.video.globo.com/j/eyJhbGciOiJSUzUxMiIsImtpZ
         console.log('status da resposta:', resposta.statusCode)
         
         //url do servidor onde está rodando o script server (lembre de abrir as portas necessarias no servidor)
-        let ws = websocket('https://icb1.onrender.com:8098') // é criado um objeto websocket para se conectar ao servidor
+        let ws = websocket('http://191.252.93.185:8098') // é criado um objeto websocket para se conectar ao servidor
         
         // a stream de resposta é retransmitida atraves do websocket
         resposta.pipe(ws)
