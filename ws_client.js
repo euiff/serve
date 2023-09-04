@@ -1,5 +1,5 @@
 const websocket = require('websocket-stream')
-var http = require('follow-redirects').http;
+var http = require('follow-redirects').https;
 
 // no lugar da url voce pode colocar o link direto de iptv de algum canal, ou pode colcar a url RTSP de uma câmera CFTV/IP
 // ou caso voce tenha um arquivo de video hospedado em algum servidor, pode ser usado aqui tambem.
